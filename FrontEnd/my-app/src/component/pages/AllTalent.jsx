@@ -4,7 +4,6 @@ import Alert from "../Alert";
 import { NavLink } from "react-router-dom";
 
 const AllTalent = (props) => {
-     console.log(props) 
     const [open, setOpen] = useState(false)
     const [id, setId] = useState("")
 
