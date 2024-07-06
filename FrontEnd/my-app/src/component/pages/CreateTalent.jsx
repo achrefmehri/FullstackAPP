@@ -92,10 +92,12 @@ const CreateTalent = (props) => {
                 </div>
                 <div class="mb-4">
                     <div class="relative">
-                        <label for="name" className="block text-gray-700 text-sm font-bold mb-2">Category:</label>
-                        <input type="text" className=" outline-none appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder=" Your Category" value={category} onChange={(e) => {
-                            setCategory(e.target.value)
-                        }} />
+                        <label for="name" className="block text-gray-700 text-sm font-bold mb-2"> Choose a Category:</label>
+                        <select onChange={(e)=>{setCategory(e.target.value)}} className=" outline-none appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="Digital Marketing" >Digital Marketing</option>
+                            <option value="Graphics & Design" >Graphics & Design</option>
+                            <option value="Programming & Tech" >Programming & Tech</option>
+                        </select>
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <i class="fas fa-user text-gray-400"></i>
                         </div>

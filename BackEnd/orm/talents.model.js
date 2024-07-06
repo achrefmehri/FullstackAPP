@@ -7,8 +7,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(10000),
       allowNull: false,
+      validate: {
+        len: [0, 10000],
+      },
     },
     imageUrl: {
       type: DataTypes.STRING,
